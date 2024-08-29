@@ -1,7 +1,6 @@
 import React from "react";
 import "./index";
 import { kanji } from "./data/kanji";
-import { link } from "fs";
 
 function randomnum() {
   const maxnum = kanji.length;
@@ -25,7 +24,9 @@ function randomnum() {
 function App() {
   return (
     <div className=" mt-16">
-      <h1 className="text-center text-sky-700">四字熟語を作るアプリ</h1>
+      <h1 className="text-center text-sky-700 select-none">
+        四字熟語を作るアプリ
+      </h1>
       <div className="mt-20">
         <p className="text-6xl text-center" id="words">
           〇〇〇〇
@@ -40,7 +41,7 @@ function App() {
         </button>
       </div>
 
-      <div className="mt-28 lg:mt-16 text-center border-2 m-16 p-5 lg:border-0 lg:m-0 lg:p-0">
+      <div className="mt-28 lg:mt-16 text-center border-2 m-16 p-5 lg:border-0 lg:m-0 lg:p-0 select-none">
         <h3>制作者情報</h3>
         <div className=" justify-items-center grid gap-2 grid-cols-1 lg:grid-cols-3 mt-5">
           <div className=" flex">
