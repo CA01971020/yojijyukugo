@@ -28,20 +28,20 @@ function App() {
         四字熟語を作るアプリ
       </h1>
       <div className="mt-20">
-        <p className="text-6xl text-center" id="words">
+        <p className="text-7xl text-center font-yujisyuku" id="words">
           〇〇〇〇
         </p>
       </div>
       <div className=" text-center mt-24 select-none">
         <button
-          className="rounded-xl p-2 border-2 text-2xl border-sky-700"
+          className="rounded-xl p-2 border-2 text-2xl bg-sky-700/50 border-sky-700"
           onClick={randomnum}
         >
           四字熟語を作る
         </button>
       </div>
 
-      <div className="mt-28 lg:mt-16 text-center border-2 m-16 p-5 lg:border-0 lg:m-0 lg:p-0 select-none">
+      <div className="mt-28 lg:mt-16 text-center border-2 border-sky-700 m-16 p-5 lg:border-0 lg:m-0 lg:p-0 select-none">
         <h3>制作者情報</h3>
         <div className=" justify-items-center grid gap-2 grid-cols-1 lg:grid-cols-3 mt-5">
           <div className=" flex">
