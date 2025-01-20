@@ -47,7 +47,7 @@ function App() {
           <div className=" flex">
             <p>sns：</p>
             <a
-              href="https://x.com/aputech2024"
+              href="https://x.com/hiitech2024"
               target="_blank"
               rel="noopener noreferrer"
             >
