@@ -17,5 +17,5 @@ h3 {
 }
 
 a {
-  @apply text-sky-700;
+  @apply text-xl text-white;
 }
