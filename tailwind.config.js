@@ -2,10 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        yujisyuku: ["Yuji Syuku"],
-      },
+    fontFamily: {
+      yujisyuku: ["Yuji Syuku"],
     },
   },
   plugins: [],
