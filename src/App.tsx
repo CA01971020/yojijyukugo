@@ -26,6 +26,10 @@ export function randomnum() {
 function App() {
   return (
     <div>
+      <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+      />
       <div className=" text-right mr-16 mt-4">
         <Menu />
       </div>

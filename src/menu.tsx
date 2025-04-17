@@ -9,9 +9,13 @@ export function MenuState() {
 
 export default function Menu() {
   const { show, setShow } = MenuState();
-  if (show == true) {
+  if (show === true) {
     return (
       <div className=" fixed bg-sky-700 w-full h-screen top-0 font-yujisyuku">
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
+        />
         <button className="mt-4 mr-16" onClick={() => setShow(false)}>
           <IoMdClose className=" select-none text-white text-3xl" />
         </button>
