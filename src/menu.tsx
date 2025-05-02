@@ -33,7 +33,7 @@ export default function Menu() {
             </div>
             <div className=" mt-16">
               <a
-                href="https://x.com/hiitech2024"
+                href="https://x.com/h1idev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ export default function Menu() {
             </div>
             <div className=" mt-16">
               <a
-                href="https://hii-site.vercel.app/"
+                href="https://hii-dev.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
