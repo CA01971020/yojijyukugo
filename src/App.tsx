@@ -25,7 +25,7 @@ export function randomnum() {
 
 function App() {
   return (
-    <div>
+    <div className="font-yujisyuku">
       <link
         rel="preconnect"
         href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
@@ -34,11 +34,11 @@ function App() {
         <Menu />
       </div>
       <div className=" mt-16">
-        <h1 className="text-center text-sky-700 select-none font-yujisyuku">
+        <h1 className="text-center text-sky-700 select-none">
           四字熟語を作るアプリ
         </h1>
         <div className="mt-20">
-          <p className="text-7xl text-center font-yujisyuku" id="words">
+          <p className="text-7xl text-center" id="words">
             〇〇〇〇
           </p>
           <Button />
