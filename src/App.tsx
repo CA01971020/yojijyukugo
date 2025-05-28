@@ -1,4 +1,3 @@
-import React from "react";
 import "./index";
 import { kanji } from "./data/kanji";
 import Button from "./button";
@@ -6,26 +5,36 @@ import Menu from "./menu";
 
 export function randomnum() {
   const maxnum = kanji.length;
-  let count = 0;
-  let outputkanji: string[] = []; // 型アノテーションを追加
-  while (count < 4) {
-    let random = Math.floor(Math.random() * maxnum);
-    let output = kanji[random];
-    outputkanji.push(output);
-    count++;
+  let outputkanji: string[] = [];
+
+  for (let i = 0; i < 4; i++) {
+    const random = Math.floor(Math.random() * maxnum);
+    outputkanji.push(kanji[random]);
   }
 
   const element = document.getElementById("words");
-  if (element) {
-    element.textContent = outputkanji.join("");
-  } else {
+  if (!element) {
     console.error("エラー！やり直してね！");
+    return;
   }
+
+  // 一旦空にする
+  element.textContent = "";
+
+  // タイプライター風に1文字ずつ表示
+  let index = 0;
+  const interval = setInterval(() => {
+    element.textContent += outputkanji[index];
+    index++;
+    if (index >= outputkanji.length) {
+      clearInterval(interval);
+    }
+  }, 200); // 1文字ずつ表示する間隔（ms）
 }
 
 function App() {
   return (
-    <div className="font-yujisyuku">
+    <div>
       <link
         rel="preconnect"
         href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap"
@@ -37,8 +46,8 @@ function App() {
         <h1 className="text-center text-sky-700 select-none">
           四字熟語を作るアプリ
         </h1>
-        <div className="mt-20">
-          <p className="text-7xl text-center" id="words">
+        <div className=" mt-20">
+          <p className="text-7xl h-20 text-center" id="words">
             〇〇〇〇
           </p>
           <Button />

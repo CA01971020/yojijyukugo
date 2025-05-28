@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
 
+body {
+  font-family: "Yuji Syuku", serif;
+}
+
 h1 {
   @apply text-3xl;
 }
